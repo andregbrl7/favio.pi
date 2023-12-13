@@ -6,6 +6,7 @@ const TelaLogin = () => {
   const [senha, setSenha] = useState("");
 
   const handleLogin = () => {
+    
     // Lógica de autenticação: aqui você pode verificar o email e a senha,
     // e redirecionar o usuário se a autenticação for bem-sucedida.
     if (email === "seuemail@example.com" && senha === "suasenha123") {
@@ -25,14 +26,14 @@ const TelaLogin = () => {
         <input
           type="email"
           value={email}
-          onChange={(evento) => setEmail(evento.target.value)}
+          onChange={(evento => setEmail(evento.target.value))}
         />
 
         <label>Senha</label>
         <input
           type="password"
           value={senha}
-          onChange={(evento) => setSenha(evento.target.value)}
+          onChange={(evento => setSenha(evento.target.value))}
         />
 
         <button type="button" onClick={handleLogin}>

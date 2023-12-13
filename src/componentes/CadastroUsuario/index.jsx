@@ -92,7 +92,8 @@ const CadastroUsuario = () => {
           </button>
         </form>
       </div>
-      <button onClick={salvarFavorito}>Salvar Cadastros</button>
+      <input type="button" value="Cadastrar" 
+          onClick={()=> salvarFavorito(senha, confSenha)}  />
     </div>
   );
 };
